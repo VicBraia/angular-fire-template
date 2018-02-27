@@ -1,0 +1,41 @@
+<div ng-include src="'entity/create.html'"></div>
+<div ng-include src="'entity/update.html'"></div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-6 title">
+      <h1>This is a template</h1>
+    </div>
+  </div>
+  <div class="row justify-content-end mb-4">
+    <div class="col-2">
+      <button type="button" class="btn btn-primary" style="cursor:pointer" data-toggle="modal" data-target="#create" name="create">Create</button>
+    </div>
+  </div>
+  <div class="row table pl-5 pr-5">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Number</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr ng-repeat="e in vm.entityList">
+          <td>{{ e.$id }}</td>
+          <td>{{ e.name }}</td>
+          <td>{{ e.number }}</td>
+          <td>
+            <button type="button" class="btn btn-info" style="cursor:pointer" data-toggle="modal" data-target="#update" ng-click="vm.update(e.$id)" name="update">
+              Edit
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger" ng-click="vm.remove(e)" name="delete">
+              Delete
+            </button>
+          </td>
+      </tr>
+    </table>
+  </div>
+</div>

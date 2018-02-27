@@ -1,0 +1,23 @@
+{
+  "name": "template-angular-fire",
+  "authors": [
+    "Victória Braia <c0498469@vale.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.6",
+    "angular-ui-router": "^1.0.15",
+    "angularfire": "^2.3.0"
+  }
+}

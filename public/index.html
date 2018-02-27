@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="template-angular-fire">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AngularFire Template</title>
+
+    <!-- declare .css files and other stylesheet references, like below: -->
+    <!-- <link rel="stylesheet" href="#"/> -->
+
+  </head>
+
+  <body>
+    <ui-view></ui-view>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- if you want to use bootstrap: -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- AngularJs -->
+    <script src="lib/angular/angular.min.js" charset="utf-8"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="lib/angularfire/dist/angularfire.min.js"></script>
+
+    <!-- All .js files in the project: -->
+    <script src="app/app.js" charset="utf-8"></script>
+    <script src="app/app.core.js" charset="utf-8"></script>
+    <script src="app/app.controller.js" charset="utf-8"></script>
+
+    <script src="app/app.config/app.config.js" charset="utf-8"></script>
+
+    <script src="factories/entity.factory.js" charset="utf-8"></script>
+
+    <script src="entity/template.controller.js" charset="utf-8"></script>
+
+
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDxVlUhtlyH2w9mrOnbpnAFOD7hErJGaX8",
+      authDomain: "angularfire-template.firebaseapp.com",
+      databaseURL: "https://angularfire-template.firebaseio.com",
+      projectId: "angularfire-template",
+      storageBucket: "angularfire-template.appspot.com",
+      messagingSenderId: "275057071211"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </body>
+</html>
