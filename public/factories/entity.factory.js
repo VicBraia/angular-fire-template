@@ -19,14 +19,7 @@
             edit: edit,
             remove: remove,
             addSubItem: addSubItem
-            // getAllSkills: getAllSkills,
-            // removeSkill: removeSkill,
-            // editSkill: editSkill,
-            // getPersonBySkill: getPersonBySkill,
-            // getPersonBySkillLevel: getPersonBySkillLevel,
-            // getPersonByTeam: getPersonByTeam,
-            // getPersonByProfile: getPersonByProfile,
-            // getAvailablePeople: getAvailablePeople
+
         };
 
         return service;
@@ -66,18 +59,6 @@
         function getAllsubItems(entity) {
           return person.subItems;
         }
-        
-        //
-        // function removeSkill(person, key){
-        //   person.skills.splice(key,1);
-        //   person.$save();
-        // }
-        //
-        // function editSkill(personId, skill){
-        //   var skillRef = personRef.child(personId).child(skill.$id);
-        //   var currentSkill = $firebaseObject(skillRef);
-        //   currentSkill = skill;
-        //   return currentSkill.$save();
-        // }
+
       }
 })();
