@@ -14,8 +14,6 @@
         activate();
 
         function activate() {
-          console.log("caraca, mano");
-
         }
     }
 })();
